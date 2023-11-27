@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Framework\Framework.csproj" />
+    <ProjectReference Include="..\Infrastructure.Persistence.Ef\Infrastructure.Persistence.Ef.csproj" />
+    <ProjectReference Include="..\Infrastructure.Query.Ef\Infrastructure.Query.Ef.csproj" />
+  </ItemGroup>
+
+</Project>
